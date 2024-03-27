@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="800.0" style="-fx-background-color: #2A2D38;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.youtube.downloader.Controller">
+   <children>
+      <JFXButton fx:id="confirmButton" layoutX="653.0" layoutY="79.0" onAction="#pressConfirmButton" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #0197F0;" text="Comfirm" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="urlLink" focusColor="#0f8ed7" labelFloat="true" layoutX="22.0" layoutY="22.0" prefHeight="39.0" prefWidth="756.0" promptText="Enter video link" style="-fx-prompt-text-fill: lightwhite; -fx-text-inner-color: white;" unFocusColor="#929191">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="resolutionMenu" layoutX="123.0" layoutY="139.0" prefHeight="26.0" prefWidth="184.0" stylesheets="@style.css" />
+      <Text fill="WHITE" layoutX="22.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolution" wrappingWidth="84.1025390625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="downloadTypeMenu" layoutX="456.0" layoutY="86.0" onAction="#pressComboBox" prefHeight="26.0" prefWidth="184.0" stylesheets="@style.css" />
+      <JFXCheckBox fx:id="thumbnail" layoutX="22.0" layoutY="203.0" prefHeight="18.0" prefWidth="91.0" text="Add thumbnails to videos" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="subtitle" layoutX="22.0" layoutY="246.0" prefHeight="18.0" prefWidth="91.0" text="Add subtitles to videos ( Only youtube &amp; If avaliable )" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="downloadButton" layoutX="14.0" layoutY="361.0" onAction="#pressDownloadButton" prefHeight="74.0" prefWidth="396.0" style="-fx-background-color: linear-gradient(#007EE3,#E000E3);" text="Download" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </JFXButton>
+      <HBox fx:id="startBox" alignment="CENTER_RIGHT" layoutX="565.0" layoutY="166.0" prefHeight="74.0" prefWidth="218.0" spacing="20.0" style="-fx-background-color: #85929E;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Number" textAlignment="RIGHT" wrappingWidth="135.20000000000005">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="startField" alignment="CENTER" prefHeight="26.0" prefWidth="84.0" style="-fx-text-inner-color: white;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox fx:id="endBox" alignment="CENTER_RIGHT" layoutX="565.0" layoutY="252.0" prefHeight="74.0" prefWidth="218.0" spacing="20.0" style="-fx-background-color: #85929E;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="End Number" textAlignment="RIGHT" wrappingWidth="135.20000000000005">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="endField" alignment="CENTER" prefHeight="26.0" prefWidth="84.0" style="-fx-text-inner-color: white;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <JFXButton fx:id="downloadPathButton" layoutX="550.0" layoutY="373.0" onAction="#pressDownloadPath" prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #0197F0; -fx-background-radius: 20px;" text="Download Path" textFill="WHITE" />
+      <Label fx:id="downloadFilePath" alignment="CENTER" layoutX="431.0" layoutY="416.0" prefHeight="20.0" prefWidth="362.0" text="C:\Users\black\download" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="serial" layoutX="22.0" layoutY="289.0" prefHeight="18.0" prefWidth="91.0" text="Add serial numbers to videos" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <Text fx:id="note" fill="#f2ff00" layoutX="22.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="( Note: Please enter the first video link of your playlist )" />
+      <HBox alignment="CENTER" layoutX="-2.0" layoutY="442.0" prefHeight="51.0" prefWidth="800.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\@2021 - Author ( Blacksky )">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

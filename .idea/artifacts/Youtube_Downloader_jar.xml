@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Youtube_Downloader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Youtube_Downloader_jar</output-path>
+    <root id="archive" name="Youtube_Downloader.jar">
+      <element id="module-output" name="Youtube_Downloader" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Java_Require_Files/jfoenix-8.0.10.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

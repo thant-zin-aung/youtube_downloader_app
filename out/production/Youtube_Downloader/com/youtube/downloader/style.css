@@ -1,0 +1,8 @@
+.combo-box .cell {
+    -fx-background-color: #2A2D38;
+    -fx-text-fill: #FFFFFF;
+}
+
+.combo-box .cell:hover {
+    -fx-background-color: linear-gradient(#007EE3,#E000E3);
+}
